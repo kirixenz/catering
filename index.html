@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 5 Catering - Collage Hero Section</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <h2>Group 5</h2>
+            </a>
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="collage">
+            <img src="img/sam.png" class="lol" alt="Image 1">
+            <img src="img/3.png" alt="Image 2">
+            <img src="img/4.png" alt="Image 3">
+        </div>
+        <div class="content">
+            <h1>Delicious Catering for Every Occasion</h1>
+            <a href="#menu"><button>Explore Our Menu</button></a>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>Our Catering Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="img/roll.jpg" alt="Appetizers">
+                <h3>Appetizers</h3>
+                <p>Start your event with mouth-watering appetizers like spring rolls, bruschetta, and more!</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/main.avif" alt="Main Course">
+                <h3>Main Course</h3>
+                <p>Our main course includes a variety of delicious options like grilled chicken, pasta, and seafood etc.</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/dessert.png" alt="Desserts">
+                <h3>Desserts</h3>
+                <p>Indulge in sweet treats like chocolate cake, fruit tarts, and more to end your meal 😋.</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/beverage.jpg" alt="Beverages">
+                <h3>Beverages</h3>
+                <p>Refresh with a wide range of drinks including fresh juices, mocktails, and more etc.</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/salad.jpg" alt="Salads">
+                <h3>Salads</h3>
+                <p>Enjoy fresh and healthy salads with seasonal ingredients to emphasize your meal. 👍</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/vegan.jpg" alt="Vegan">
+                <h3>Vegan</h3>
+                <p>We offer a selection of plant-based dishes for our vegan guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" style="padding: 60px 20px; text-align: center;" id="about">
+        <h2>About Our Project</h2>
+        <p>
+            This project is a collaborative effort by friends/members of group 5 who aimed to create a catering website for the school project. Each member contributed their unique skills and experiences to make this
+            project a success.
+        </p>
+        <h3>Meet the Team</h3>
+        <ul style="list-style-type: none; padding: 0;">
+            <li class="team-member">
+                <strong class="hover-name">Sam</strong>: Head of the project, also designed the site and overall fixed most of the bugs. 🗿
+                <img src="img/sam.png" alt="Sam" class="member-image">
+            </li>
+            <li class="team-member">
+                <strong class="hover-name">Dame</strong>: Helped in finding the images and info needed.
+                <img src="img/dame.jpg" alt="Alice" class="member-image">
+            </li>
+            <li class="team-member">
+                <strong class="hover-name">Haki</strong>: Made the about section.
+                <img src="img/haki.png" alt="John" class="member-image">
+            </li>
+            <li class="team-member">
+                <strong class="hover-name">Pynz</strong>: Helped Sanki.
+                <img src="img/pynz.png" alt="Maria" class="member-image">
+            </li>
+            <li class="team-member">
+                <strong class="hover-name">Sanki</strong>: Made the Menu section.
+                <img src="img/sanki.jpg" alt="Maria" class="member-image">
+            </li>
+            <li class="team-member">
+                <strong class="hover-name">Mankhraw</strong>: Made the contact section.
+                <img src="img/unknown.jpg" alt="Maria" class="member-image">
+            </li>
+        </ul>
+        <p>
+            Together we all are proud of what we have accomplished as a team. We hope you enjoy exploring our catering services!
+        </p>
+    </section>
+
+    <section class="contact-section" id="contact" style="padding: 60px 20px; text-align: center;">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Phone: +91 9818303183 (random phone no btw)</p>
+            <p>Address: laban, 793004</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Group 5 Catering. No copying me bruh 🔫</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
